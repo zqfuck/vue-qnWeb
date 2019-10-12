@@ -1,0 +1,214 @@
+<template>
+  <div class="footer">
+     <div class="footer_left">
+        <ul class="ulLeft">
+            <li  v-for="(item,index) in menuList" :key="index">
+             <router-link v-if="item.showOut" :to="item.url"> <span>{{item.title}}</span></router-link>
+              <a v-else :href="item.url" target="_blank">{{item.title}}</a>
+            </li>
+
+        </ul>
+        <div class="conpanyName">
+            <p>Copyright © 2016 channelsoft</p>
+            <p>版权所有：青牛(北京)技术有限公司 京ICP备10016421号-6</p>
+        </div>
+     </div>
+     <div class="footer_right">
+        <div class="right_Image">
+            <div id="right_tu"></div>
+            <div id="right_logo"></div>
+        </div>
+        <div class="conpanyName">
+                <p>地址：北京市石景山区田顺庄北路1号院古城创业大厦3号楼</p>
+                <p>邮编：100043&nbsp;&nbsp;&nbsp; 总机：010-88822000 &nbsp;&nbsp;&nbsp;传真：101-68711717</p>
+            </div>
+     </div>
+  </div>
+</template>
+
+<script>
+    export default {
+    data(){
+        return{
+            menuList:[
+                {
+                    title:'产品服务',
+                    url:'/QingYun',
+                  showOut:true
+                },{
+                    title:'解决方案',
+                    url: '/Solution',
+                showOut:true
+                },{
+                    title:'关于我们',
+                    url:'/AboutUs',
+                showOut:true
+                },{
+                    title:''
+                },{
+                    title:'加入青牛',
+                    url:'/JoinYouth',
+                showOut:true
+                },{
+                    title:'快速链接',
+                showOut:false,
+                url:'javascript:',
+                },{
+                    title:'联络云',
+                url:'/QingYun',
+                showOut:true
+                },{
+                title:' 行业',
+                showOut:true,
+                url:'/Solution',
+              },{
+                    title:'公司介绍',
+                  url:'/AboutUs',
+                showOut:true
+                },{
+                    title:'未来展望',
+                showOut:false,
+                url:'javascript:',
+                },{
+                    title:'员工福利',
+                  url:'/JoinYouth',
+                showOut:true
+                },{
+                    title:'www.ccod.com',
+                url:'http://www.ccod.com',
+                showOut:false
+                },{
+                    title:'大数据',
+                  url:'/QingniuVideo',
+                showOut:true
+                },{
+                title:'场景',
+                url:'/Scene',
+                showOut:true
+              },{
+                    title:'品牌释义',
+                showOut:true,
+                url:'/AboutUs',
+                },{
+                    title:'合作伙伴',
+                showOut:false,
+                url:'javascript:',
+                },{
+                    title:'在招职位',
+                    url:'/OnJob',
+                showOut:true
+                },{
+                    title:'www.qnzsai.com',
+                  url:'http://www.qnzsai.com',
+                showOut:false
+                },{
+                    title:'AI',
+                  url:'/QingniuAI',
+                showOut:true
+                },{
+                    title:'',
+                showOut:false,
+                url:'javascript:',
+                },{
+                    title:'发展历程',
+                    url:'/AboutUs',
+                showOut:true
+                },{
+                    title:'企业荣誉',
+                showOut:true,
+                url:'/AboutUs',
+                },{
+                    title:'',
+                showOut:false,
+                url:'/'
+                },{
+                    title:'www.v114.com',
+                  url:'http://www.v114.com',
+                showOut:false
+                },{
+                    title:''
+                },{
+                    title:''
+                },{
+                    title:'愿景使命',
+                showOut:true,
+                url:'/AboutUs',
+
+                },{
+                    title:'联系我们',
+                showOut:true,
+                url:'/AboutUs',
+                }
+            ]
+        }
+    }
+    }
+</script>
+<style >
+    .footer{
+       width: 76%;
+      height: 236px;
+       padding: 58px 12% 70px;
+       background-color: rgb(16,29,44);
+       display: flex;
+    }
+    .footer a{
+      color: inherit!important;
+    }
+    .footer_left{
+        width: 55%;
+        padding-right: 5%;
+    }
+    .ulLeft{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        height: auto;
+        overflow: hidden;
+    }
+    .ulLeft li{
+        float: left;
+        width: 16%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+    }
+    .conpanyName{
+      margin-top: 40px;
+    }
+    .conpanyName p{
+        color: #fff;
+        font-size: 14px;
+        text-align: left;
+      line-height: 24px;
+
+    }
+    .footer_right{
+        width: 43%;
+    }
+    .right_Image{
+        display: flex;
+        align-items: center;
+        margin-bottom:8px;
+        margin-top:10px;
+    }
+    #right_tu{
+        width: 136px;
+        height: 136px;
+        background: url('../assets/img/footer.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        margin-right:15px;
+    }
+    #right_logo{
+        width: 259px;
+        height: 60px;
+        background: url('../assets/img/logo.png') no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+</style>
+
+
