@@ -1,13 +1,13 @@
 <template lang='html'>
     <div class="ccod-Heder">
-        <router-link to="/"><div id='ccod_logo' style='display:inline-block;'></div></router-link>
+        <router-link exact to="/"><div id='ccod_logo' style='display:inline-block;'></div></router-link>
         <div class="ccod-menu" style=''>
             <div class="ccod-menu-list" v-for="(menu,index) in menuList" @click="addActive(menu,index)" @mouseover="hoverMenuItem(menu,index)" @mouseout="hoverMenuItem(menu,index)" :key="index">
-                <router-link v-if="!menu.out" class="haveMenu"  :to="menu.url">{{menu.title}}</router-link>
+                <router-link exact v-if="!menu.out" class="haveMenu"  :to="menu.url">{{menu.title}}</router-link>
                 <a v-else class="haveMenu" :href="menu.url" target="_blank" >{{menu.title}}</a>
                 <template v-if="menu.child">
                      <div class="ccod-submenu" v-show="menu.show">
-                           <router-link class="ccod-submenu-item" :to="child.url" v-for="(child,index) in menu.child" :key="index">{{child.title}}</router-link>
+                           <router-link exact class="ccod-submenu-item" :to="child.url" v-for="(child,index) in menu.child" :key="index">{{child.title}}</router-link>
                      </div>
                 </template>
             </div>
@@ -32,16 +32,16 @@
                     },{
                         out:false,
                         title:'产品服务',
-                        url:'',
+                        url:'/QingYun',
                         child:[
                             {
                                 title:'联络云',
                                 url:'/QingYun'
                             },{
-                            title:'大数据',
+                            title:'大数据技术',
                             url:'/BigData'
                           },{
-                                title:'AI',
+                                title:'AI服务',
                                 url:'/QingniuAI'
                             }
                         ],
@@ -73,7 +73,7 @@
                     },{
                         out:false,
                         title:'加入青牛',
-                        url:'',
+                        url:'/JoinYouth',
                         child: [
                           {
                             title: '员工福利',
@@ -109,6 +109,12 @@
           if (to.path){
             this.addAct = true
           }
+           $(".ccod-menu-list .haveMenu").removeClass('active_');
+          if(to.path=='/BigData'||to.path=='/QingniuAI'){
+           $(".ccod-menu-list .haveMenu").eq(1).addClass('active_')
+          }else if(to.path=='/OnJob'){
+            $(".ccod-menu-list .haveMenu").eq(5).addClass('active_')
+          }
         }
       },
         methods:{
@@ -130,7 +136,7 @@
            },function () {
              $(this).prev('a').removeClass('active')
            })
-        $(".ccod-menu-list .haveMenu").eq(0).addClass('active_')
+      //  $(".ccod-menu-list .haveMenu").eq(0).addClass('active_')
       }
     }
 </script>
@@ -195,6 +201,11 @@
    }
     .ccod-Heder .ccod-menu-list a.active{
      color: #FFBA00;
+     border-bottom: 2px solid #FFBA00;
+     padding-bottom: 18px;
+   }
+  .ccod-menu-list .router-link-active{
+      color: #FFBA00;
      border-bottom: 2px solid #FFBA00;
      padding-bottom: 18px;
    }

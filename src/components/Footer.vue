@@ -4,7 +4,7 @@
         <ul class="ulLeft">
             <li  v-for="(item,index) in menuList" :key="index">
              <router-link v-if="item.showOut" :to="item.url"> <span>{{item.title}}</span></router-link>
-              <a v-else :href="item.url" target="_blank">{{item.title}}</a>
+              <a v-else :href="item.url" >{{item.title}}</a>
             </li>
 
         </ul>
@@ -37,7 +37,7 @@
                   showOut:true
                 },{
                     title:'解决方案',
-                    url: '/Solution',
+                    url: '/Scene',
                 showOut:true
                 },{
                     title:'关于我们',
@@ -69,8 +69,8 @@
                 showOut:true
                 },{
                     title:'未来展望',
-                showOut:false,
-                url:'javascript:',
+                    showOut:true,
+                    url:'/AboutUs',
                 },{
                     title:'员工福利',
                   url:'/JoinYouth',
