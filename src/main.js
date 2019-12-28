@@ -6,7 +6,8 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'//element-ui的css
 import VueAMap from 'vue-amap';
-
+import VueWechatTitle from 'vue-wechat-title'
+Vue.use(VueWechatTitle)
 import $ from 'jquery'
 
 

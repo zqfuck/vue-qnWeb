@@ -9,10 +9,10 @@
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox textBox1">
-                      <div class="leftT">2006</div>
+                      <!-- <div class="leftT">2006</div> -->
                       <div class="rightT">
-                        <p>构建中国最早的基于SaaS的云计算联络中心。</p>
-                        <p>12年云联络中心运营经验，18年呼叫中心服务品牌。</p>
+                        <p>2006年开始构建基于SaaS的云计算联络中心</p>
+                        <p>拥有15年企业云服务运营经验</p>
                       </div>
                     </div>
                    <div class="detailBox">
@@ -25,8 +25,8 @@
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox textBox2">
-                      <div class="leftT" style="margin-bottom: 20px;">150,000+</div>
-                      <div style="font-weight: bold;font-size: 18px">联络云平台在线坐席超15万。</div>
+                      <!-- <div class="leftT" style="margin-bottom: 20px;">150,000+</div> -->
+                      <div style="font-weight: bold;font-size: 18px">服务1000多家大中型企业和数百万家中小企业</div>
                     </div>
                     <div class="detailBox">
                       <router-link to="/AboutUs"><div class="goDetail">了解详情</div></router-link>
@@ -38,10 +38,10 @@
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox">
-                      <div class="leftT">3000</div>
+                      <!-- <div class="leftT">3000</div> -->
                       <div class="rightT">
-                        <p>服务3000多家大型企业和数百万家中小企业，</p>
-                        <p>客户遍布全中国。</p>
+                        <p>每年帮助客户创造数千亿元销售收入</p>
+                        <p>每年通过平台触达营销五亿C端用户人群</p>
                       </div>
 
                     </div>
@@ -49,7 +49,7 @@
                       <router-link to="/AboutUs"><div class="goDetail">了解详情</div></router-link>
                     </div>
                   </el-carousel-item>
-                  <el-carousel-item>
+                  <!-- <el-carousel-item>
                     <img style="width:100%;height:100%;" src="../assets/img/b04.png" alt="">
                     <div style="width:100%;display: flex;justify-content: center;position: absolute;top: 160px;">
                       <img  src="../assets/img/lo_.png">
@@ -64,7 +64,7 @@
                     <div class="detailBox">
                       <router-link to="/AboutUs"><div class="goDetail">了解详情</div></router-link>
                     </div>
-                  </el-carousel-item>
+                  </el-carousel-item> -->
               </el-carousel>
           </div>
           <!--<div>
@@ -88,17 +88,17 @@
           <div class="ccod_qingniu">
               <img src="../assets/img/img_1.png">
               <h3>联络云</h3>
-              <span>多媒体客服、电弧营销</span>
+              <!-- <span>多媒体客服、电弧营销</span> -->
           </div>
           <div class="ccod_qingniu">
             <img src="../assets/img/img_2.png">
             <h3>大数据</h3>
-            <span>获客、续联、验真、知客</span>
+            <!-- <span>获客、续联、验真、知客</span> -->
           </div>
           <div class="ccod_qingniu">
             <img src="../assets/img/img_3.png">
-            <h3>AI</h3>
-            <span>(文本/语音)机器人</span>
+            <h3>AI服务</h3>
+            <!-- <span>(文本/语音)机器人</span> -->
          </div>
       </div>
 
@@ -111,11 +111,12 @@
 
     <div class="ccod_detail">
       <div class="ccod_detail_1" style="background:#f8f8f8;">
-        <div class="ccod_detail_list" style="margin-right: 103px;">
+        <div class="ccod_detail_list" style="margin-right: 80px;">
           <h3 class="f30">联络云</h3>
-          <p>中国企业联络云服务开创者，金融行业智慧联络云专家。</p>
-          <p> 2006年创建和中国网通搭建全国范围的SaaS呼叫中心平台，</p>
-          <p>平安、太保、阳光、大地、交行等各大金融公司的一致选择。</p>
+          <p class="mid">中国企业联络云服务的开创者与引领者</p>
+   
+          <p style="text-indent:36px;"> CCOD(Contact Cloud On Demand)按需定制的联络云服务，是青牛软件倾力打造的全媒体、智能、安全、灵活的企业云联络通信平台，
+            帮助企业快速建立企业与客户之间全方位、多触点的沟通联络。</p>
           <router-link to="/QingYun"><button>了解详情</button></router-link>
         </div>
         <img src="../assets/img/img_4.png">
@@ -123,23 +124,22 @@
 
       <div class="ccod_detail_1">
         <img src="../assets/img/img_5.png">        
-        <div class="ccod_detail_list"  style="margin-left: 103px;">
-          <h3 class="f30">大数据</h3>
-          <p>
-            帮助企业精准地找到客户。
+        <div class="ccod_detail_list"  style="margin-left: 80px;">
+          <h3 class="f30">大数据技术</h3>
+          <p class="mid">
+            中国企业联络云服务的开创者与引领者
           </p>
-          <p>合规合法，高效便捷。</p>
+          <p style="text-indent:36px;">通过青牛大数据技术，帮助企业客群在企业用户群中找出匹配产品或服务的目标用户群。</p>
           <router-link to="/QingniuVideo"><button>了解详情</button></router-link>
 
         </div>
       </div>
 
       <div class="ccod_detail_1" style="background:#f8f8f8;">
-        <div class="ccod_detail_list " style="margin-right: 103px;">
-          <h3 class="f30">AI</h3>
-          <p>领先的AI技术核心，完整解决方案，</p>
-          <p>微服务架构，人机紧密结合，</p>
-          <p>智慧客服五大产品线、全行业整体解决方案。</p>
+        <div class="ccod_detail_list " style="margin-right: 80px;">
+          <h3 class="f30">AI服务</h3>
+          <p class="mid">融合AI服务   让企业服务轻松自如</p>
+          <p style="text-indent:36px;">基于语音识别、语音合成、自然语言理解等技术，实现“懂你、会说、能办事”的在线人机沟通。</p>
           <router-link to="/QingniuAI"><button>了解详情</button></router-link>
         </div>
         <img src="../assets/img/img_6.png">
@@ -225,6 +225,7 @@ export default {
   }
   .ccod_detail{
     width: 100%;
+    
     height: auto;
     overflow: hidden;
     display: flex;
@@ -262,16 +263,25 @@ export default {
 
   .ccod_detail_1 a{
     color:inherit;
+    
   }
   .ccod_detail_list p{
     font-size: 18px;
     line-height: 28px;
     color: #333;
-    text-align: left;
+    text-align: justify;
   }
+   .ccod_detail_list .mid{
+     margin-bottom: 46px;
+     text-align:center;
+     font-weight: bold;
+   }
   .ccod_detail_list h3{
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     font-weight: bold;
+  }
+  .ccod_detail_list{
+    max-width: 460px;
   }
    .ccod_detail_list button{
      border: 0;
@@ -354,7 +364,7 @@ export default {
     flex-direction: column;
     font-size: 18px;
     font-weight: bold;
-    text-align: left;
+    /* text-align: left; */
   }
      .ccod_ba{
        width: 100%;
@@ -366,6 +376,7 @@ export default {
         width: 862px;
         height: 0px;
         margin-top: 40px;
+        margin-bottom: 30px;
         background: url('../assets/img/smart.png') no-repeat;
         background-size: 100% 100%;
         cursor: pointer;

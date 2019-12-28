@@ -1,26 +1,24 @@
 <template>
   <div class="wrap">
      <div class="ccod_join">
-        <h2>大数据</h2>
-        <p>帮助企业精准地找到客户</p>
-        <p>合规合法，高效便捷</p>        
+        <h2>大数据技术</h2>
+        <p>为客户更精准投递服务</p>
     </div>
 
     <div class="ccod_data">
-          <h3 class="ccod_title f30" >大数据云服务概述</h3>
+          <h3 class="ccod_title f30" >大数据技术概述</h3>
           <p class="ccod_titles"><span class="line"></span></p>
           <div class="data_1">
-            <p>青牛大数据云服务为保险、金融企业提供合法合规的大数据产品服务，具有覆盖三网用户，本网触达的能力。</p>
-            <p>通过青牛大数据云服务，企业能进行老用户回访，信贷风控、企业征信等，极大提升营销效率并带来可见的经济效益提升。</p>
+            <p>通过青牛大数据技术，帮助企业客群在企业用户群中找出匹配产品或服务的目标用户群。</p>
           </div>
           <div class="data_Img_1"></div>
-          <ul>
+          <!-- <ul>
             <li style="margin-right: 93px;"><img src="../assets/img/cccc.png" />对接三大运营商大数据产品</li>
             <li><img src="../assets/img/cccc.png" />服务全程合规、安全，满足金融行业业务需求</li>
-          </ul>
+          </ul> -->
     </div>
 
-    <div class="ccod_data" style="background: #F7F8FA;">
+    <!-- <div class="ccod_data" style="background: #F7F8FA;">
       <h3 class="ccod_title f30" >续联产品</h3>
       <p class="ccod_titles"><span class="line"></span></p>
       <div class="data_more flex"> 
@@ -90,24 +88,30 @@
             <p v-html="item.con"></p>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="ccod_data" style="background: #F7F8FA;">
       <h3 class="ccod_title f30">服务优势</h3>
       <p class="ccod_titles"><span class="line"></span></p>
-      <p style="font-size:16px;margin: 40px 0 70px;">一站式支撑全方位解决</p>
+      <!-- <p style="font-size:16px;margin: 40px 0 70px;">一站式支撑全方位解决</p> -->
       <div class="serverImg"> 
         <div class="bestServer_1  bestServer_">
-           <p class="ser_tel">热线电话支持</p>
-           <p class="ser_comtent">提供7x24小时电话的客服和技术支持，提供专业及独享的客服及技术人员为企业进行服务</p>
+           <p class="ser_tel">技术优势</p>
+           <p class="ser_comtent">提供平台数据治理能力，</p>
+           <p class="ser_comtent">建立业务标签体系，</p>
+           <p class="ser_comtent">根据用户画像</p>
+           <p class="ser_comtent">匹配个性化产品与服务。</p>
         </div>
         <div class="bestServer_2  bestServer_">
-            <p class="ser_tel">培训服务</p>
-           <p class="ser_comtent">给予功能培训及系统日常操作材料，根据企业需求进行上门培训及系统指导</p>
+            <p class="ser_tel">服务优势</p>
+           <p class="ser_comtent">快速响应客户需求，</p>
+           <p class="ser_comtent">提供一站式大数据技术服务。</p>
         </div>
         <div class="bestServer_3  bestServer_">
-            <p class="ser_tel">定制化系统研发</p>
-           <p class="ser_comtent">根据企业系统的发展需求和产品升级演进的情况，可随时与企业进行系统对接开发，供企业第一时间享受最优质的软件服务</p>
+            <p class="ser_tel">商业优势</p>
+           <p class="ser_comtent">整合金融行业客群需求</p>
+           <p class="ser_comtent">与运营商流量资源，</p>
+           <p class="ser_comtent">快速形成商业合作与服务落地。</p>
         </div>
       </div>
     </div>
@@ -199,7 +203,7 @@ export default {
        overflow: hidden;
      }
      .data_1 p{
-       text-align: left;
+       /* text-align: left; */
        font-size: 20px;
        color: #333;
        line-height: 28px;
@@ -271,11 +275,11 @@ export default {
         font-size: 18px;
         line-height: 30px;
         text-align: center;
-        margin: 90px 0 18px;
+        margin: 90px 0 10px;
       }
       .ser_comtent{
         width: 60%;
-        padding: 0 20%;
+        padding: 0 30%;
         text-align: left;
         font-size: 16px;
         line-height: 24px;
@@ -340,7 +344,7 @@ export default {
         box-shadow:0px 0px 15px 3px rgba(0,52,89,0.13);
         border-bottom: 0;
       }
-      .ccod_dataImg{
+      /* .ccod_dataImg{
           background: url('../assets/img/p4.png') no-repeat center;
           cursor: pointer;
           width: 100%;
@@ -348,7 +352,7 @@ export default {
           overflow: hidden;
           color: #fff;
         padding-bottom: 40px;
-      }
+      } */
       .data_content{
         width: 100%;
         margin: 80px 0;

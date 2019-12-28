@@ -2,7 +2,7 @@
   <div id="app" ref="app">
     <!--<img src="./assets/logo.png">-->
     <Headers></Headers>
-    <router-view></router-view>
+    <router-view v-wechat-title='$route.meta.title'></router-view>
     <Footers></Footers>
   </div>
 </template>

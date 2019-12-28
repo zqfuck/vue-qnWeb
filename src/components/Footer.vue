@@ -49,18 +49,20 @@
                     title:'加入青牛',
                     url:'/JoinYouth',
                 showOut:true
-                },{
-                    title:'快速链接',
-                showOut:false,
-                url:'javascript:',
-                },{
+                },
+                // {
+                //     title:'快速链接',
+                // showOut:false,
+                // url:'javascript:',
+                // },
+                {
                     title:'联络云',
                 url:'/QingYun',
                 showOut:true
                 },{
-                title:' 行业',
+                title:' 智慧营销',
                 showOut:true,
-                url:'/Solution',
+                url:'/Scene',
               },{
                     title:'公司介绍',
                   url:'/AboutUs',
@@ -73,19 +75,22 @@
                     title:'员工福利',
                   url:'/JoinYouth',
                 showOut:true
-                },{
-                    title:'www.ccod.com',
-                url:'http://www.ccod.com',
-                showOut:false
-                },{
-                    title:'大数据',
+                },
+                // {
+                //     title:'www.ccod.com',
+                // url:'http://www.ccod.com',
+                // showOut:false
+                // },
+                {
+                    title:'大数据技术',
                   url:'/QingniuVideo',
                 showOut:true
                 },{
-                title:'场景',
+                title:'',
                 url:'/Scene',
                 showOut:true
-              },{
+              },
+              {
                     title:'品牌释义',
                 showOut:true,
                 url:'/AboutUs',
@@ -97,12 +102,14 @@
                     title:'在招职位',
                     url:'/OnJob',
                 showOut:true
-                },{
-                    title:'www.qnzsai.com',
-                  url:'http://www.qnzsai.com',
-                showOut:false
-                },{
-                    title:'AI',
+                },
+                // {
+                //     title:'www.qnzsai.com',
+                //   url:'http://www.qnzsai.com',
+                // showOut:false
+                // },
+                {
+                    title:'AI服务',
                   url:'/QingniuAI',
                 showOut:true
                 },{
@@ -114,31 +121,34 @@
                     url:'/AboutUs',
                 showOut:true
                 },{
-                    title:'企业荣誉',
+                    title:'愿景使命',
                 showOut:true,
                 url:'/AboutUs',
                 },{
                     title:'',
                 showOut:false,
                 url:'/'
-                },{
-                    title:'www.v114.com',
-                  url:'http://www.v114.com',
-                showOut:false
-                },{
+                },
+                // {
+                //     title:'www.v114.com',
+                //   url:'http://www.v114.com',
+                // showOut:false
+                // },
+                {
                     title:''
                 },{
                     title:''
-                },{
-                    title:'愿景使命',
-                showOut:true,
-                url:'/AboutUs',
-
                 },{
                     title:'联系我们',
                 showOut:true,
                 url:'/AboutUs',
-                }
+
+                },
+                // {
+                //     title:'联系我们',
+                // showOut:true,
+                // url:'/AboutUs',
+                // }
             ]
         }
     }
@@ -146,9 +156,9 @@
 </script>
 <style >
     .footer{
-       width: 76%;
+       width: 64%;
       height: 236px;
-       padding: 58px 12% 70px;
+       padding: 58px 18% 70px;
        background-color: rgb(16,29,44);
        display: flex;
     }
@@ -168,7 +178,7 @@
     }
     .ulLeft li{
         float: left;
-        width: 16%;
+        width: 19.8%;
         height: 30px;
         line-height: 30px;
         font-size: 14px;

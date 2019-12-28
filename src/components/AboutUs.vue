@@ -8,9 +8,10 @@
         <h3 class="ccod_title f30" >公司介绍</h3>
         <p class="ccod_titles"><span class="line"></span></p>
         <div class="pContent">
-            <p class="Pcon">青牛（北京）技术有限公司（简称青牛软件）成立于2000年，是中国领先的企业CRM云服务提供商，致力于持续提高中国企业的营销效率和服务水平。 青牛软件总部位于北京，在上海、深圳等地设有分支机构，其中技术研发人员占比80%。拥有9项专利、48项商标及57项著作权。</p>
-            <p class="Pcon">青牛软件基于云计算技术将联络云、大数据、AI等云服务能力与企业应用场景深度整合，面向企业用户提供智慧营销和智慧客服整体解决方案，有效促进 企业营销效率及服务水平的提升，是企业云服务模式最早的倡导者和践行者。</p>
-            <p class="Pcon">经过十几年的发展与积累，青牛软件云服务广泛应用于金融、电信、政府、互联网、物流、制造、生活服务等众多行业，服务客户主要包括中国移动、中 国联通、中国电信、中国人保财险、中国平安、太平洋保险、中国人寿、中国大地保险、阳光保险、华夏保险、交通银行、兴业银行、嘉实基金、恒天财富等。</p>
+            <p class="Pcon">青牛（北京）技术有限公司是中国领先的企业云服务提供商，致力于提高中国企业的营销效率和服务水平。</p>
+            <p class="Pcon">    青牛软件成立于2004年，是中国企业云服务模式最早的倡导者和践行者，青牛软件融合联络云、AI等云服务能力，结合
+大数据技术，实现与企业营销业务场景深度整合，为企业用户提供全球领先的智慧营销云服务。</p>
+            <p class="Pcon">  经过多年的努力与发展，青牛软件的企业云服务已经广泛应用于金融、电信、政府、制造、互联网、生活服务等众多行业。</p>
         </div>
 
         <div class="block block_">
@@ -38,7 +39,10 @@
     <div class="ccod_history">
         <h3 class="ccod_title f30" >发展历程</h3>
         <p class="ccod_titles"><span class="line"></span></p>
-        <div class="historyImg" style="position:relative;z-index:333;">
+        <div style=" margin:80px 0;">
+          <img src="../assets/img/history.png" alt="">
+        </div>
+        <!-- <div class="historyImg" style="position:relative;z-index:333;">
           <ul>
               <li style="position:absolute;bottom:-55px;left:20px;">
                   <el-tooltip placement="top" :visible-arrow='false' >
@@ -132,11 +136,8 @@
               </li>
           </ul>
 
-        </div>
-        <!--<div class="ccod_2015">
-          <p>2005年</p>
-
-        </div>-->
+        </div> -->
+       
     </div>
 
     <div class="ccod_shifu">
@@ -147,8 +148,9 @@
         </div>
         <ul>
           <li v-for="(item,index) in serverArry" :key="index">
-              <span>{{item.title}}</span>
-              <p>{{item.content}}</p>
+              <!-- <span>{{item.title}}</span> -->
+              <p >{{item.content}}</p>
+              <h5>{{item.content2}}</h5>
           </li>
         </ul>
        
@@ -171,7 +173,7 @@
         </ul>
     </div>
 
-    <div class="ccod_honor">
+    <!-- <div class="ccod_honor">
         <h3 class="ccod_title f30">企业荣誉</h3>
         <p class="ccod_titles"><span class="line"></span></p>
         <div class="ccod_card">
@@ -180,12 +182,11 @@
                  <div class="img_box"> <img  :src="item.url" alt=""></div>
                   <p>{{item.text}}</p>
                 </swiper-slide>
-                <!--<div class="swiper-button-prev aa" slot="button-prev"></div>
-                <div class="swiper-button-next" slot="button-next"></div>-->
+               
             </swiper>
 
         </div>
-    </div>
+    </div> -->
 
      <div class="ccod_future">
         <h3 class="ccod_title f30">联系我们</h3>
@@ -321,30 +322,33 @@ export default {
         serverArry:[
           {
             'title':'服务能力',
-            'content':'从传统语音、短信、邮件，到互联网音视频、IM、AI和大数据，我们善用科技的发展和变革，打造出符合企业需求的应用场景，无论是获客、营销，还是售后服务，我们构建了B和C之间全方位、多触点的智慧联络渠道。'
+            'content':'继续专注于提升融合网络能力',
+            'content2':'持续打造青牛企业云服务平台'
           },{
             'title':'服务内容',
-            'content':'从智慧营销，到智慧客服，我们的产品植根于企业与消费者之间沟通联络，帮助各行各业的企业，提高营销效率，提升服务水平。'
+            'content':'通过优化整合B2C之间多接触点的沟通',
+            'content2':'方式，搭建企业通向消费者的服务桥梁'
           },{
             'title':'服务客群',
-            'content':'从世界500强的大型企业，到数以百万计的中小企业和商家，我们为各种类型的企业提供解决方案。从金融、电信、互联网，到政府、制造、生活服务……我们的企业云服务涵盖了各行各业。'
+            'content':'持续提高中国企业的营销效率和服务水平，',
+            'content2':'实现企业的商业价值向目标客户的有效传递'
           }
         ],
         futureArry:[
           {
             'url':fu1,
             'url1':liang1,
-            'name':'能力之积累',
+            'name':'积累能力',
             'content':'继续专注于提升融合网络能力， 持续打造青牛企业云服务平台。'
           },{
             'url':fu2,
             'url1':liang2,
-            'name':'产品之打造',
+            'name':'打造产品',
             'content':'通过优化整合B2C之间多接触点的沟通方式，搭建企业通向消费者的全息桥梁。'
           },{
             'url':fu3,
             'url1':liang3,
-            'name':'价值之传递',
+            'name':'传递价值',
             'content':'持续提高中国企业的营销效率和服务水平，实现企业的商业价值向客户的有效传递。'
           }
         ],
@@ -448,15 +452,17 @@ export default {
        margin-bottom: 80px;
      }
      .pContent{
-       width:1120px;
+       width:920px;
        display: flex;
        font-size: 16px;
        line-height: 20px;
        align-items: center;
        flex-direction: column;
        margin-top: 79px;
+       justify-content: start;
      }
       .Pcon{
+        width: 100%;
        text-align: left;
        color: #333;
        font-size: 16px;
@@ -608,12 +614,14 @@ export default {
       .ccod_shifu ul li p{
         font-size: 16px;
         color: #333;
-        text-align: justify;
+        text-align: center;
         margin-top:29px;
-        border-top:1px solid #ccc;
+        /* border-top:1px solid #ccc; */
         padding-top:39px;
       }
-     
+      .ccod_shifu ul li h5{
+        font-size: 16px;
+      }
       .ccod_shifu ul li span{
         text-align: center;
         font-size: 20px;
@@ -649,7 +657,7 @@ export default {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        width: 223px;
+        width: 230px;
         height: 283px;
      /*   padding: 20px 20px 40px 20px;*/
         margin-bottom: 80px;

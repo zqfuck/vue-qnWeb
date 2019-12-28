@@ -39,7 +39,7 @@
                                 url:'/QingYun'
                             },{
                             title:'大数据',
-                            url:'/QingniuVideo'
+                            url:'/BigData'
                           },{
                                 title:'AI',
                                 url:'/QingniuAI'
@@ -49,16 +49,16 @@
                     },{
                          out:false,
                         title:'解决方案',
-                        url:'',
-                        child: [
-                            {
-                                title: '行业解决方案',
-                                url: '/Solution',
-                            }, {
-                                title: '场景解决方案', 
-                                url: '/Scene',
-                            }
-                        ],
+                        url:'/Scene',
+                        // child: [
+                        //     {
+                        //         title: '行业解决方案',
+                        //         url: '/Solution',
+                        //     }, {
+                        //         title: '场景解决方案', 
+                        //         url: '/Scene',
+                        //     }
+                        // ],
                         show: false
                     },{
                         out:false,
@@ -84,27 +84,23 @@
                           }
                         ],
                         show: false
-                    },/*{
-                        out:false,
-                        title:'在招职位',
-                        url:'/OnJob',
-                        show: false
-                    },*/{
-                        out:true,
-                        title:'青牛联络云',
-                        url:'http://www.ccod.com',
-                        show: false
-                    },{
-                        out:true,
-                        title:'青牛AI',
-                        url:'http://www.qnzsai.com',
-                        show: false
-                    },{
-                        out:true,
-                        title:'青牛视频云',
-                        url:'http://www.v114.com',
-                        show: false
-                    }
+                     },
+                     //{
+                    //     out:true,
+                    //     title:'青牛联络云',
+                    //     url:'http://www.ccod.com',
+                    //     show: false
+                    // },{
+                    //     out:true,
+                    //     title:'青牛AI',
+                    //     url:'http://www.qnzsai.com',
+                    //     show: false
+                    // },{
+                    //     out:true,
+                    //     title:'青牛视频云',
+                    //     url:'http://www.v114.com',
+                    //     show: false
+                    // }
                 ]
             }
         },
@@ -178,7 +174,7 @@
     .ccod-Heder .ccod-menu-list:nth-child(7){
       margin-left: 60px;
     }
-    .ccod-Heder .ccod-menu-list:nth-child(6) :after{
+    /* .ccod-Heder .ccod-menu-list:nth-child(6) :after{
       content: '';
       width: 2px;
       height: 28px;
@@ -186,7 +182,7 @@
       position: absolute;
       right: -40px;
       top: 0;
-    }
+    } */
 
    .ccod-Heder .ccod-menu-list a{
         color: #fff;
@@ -207,9 +203,7 @@
       border-bottom: 2px solid #FFBA00;
       padding-bottom: 18px;
     }
-    .ccod-Heder .ccod-menu-list .router-link-active{
-
-    }
+   
    .submenuHover{
      color: #FFBA00;
     /* border-bottom: 2px solid #FFBA00;*/
