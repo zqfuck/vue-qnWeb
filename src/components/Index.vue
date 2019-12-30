@@ -92,7 +92,7 @@
           </div>
           <div class="ccod_qingniu">
             <img src="../assets/img/img_2.png">
-            <h3>大数据</h3>
+            <h3>大数据技术</h3>
             <!-- <span>获客、续联、验真、知客</span> -->
           </div>
           <div class="ccod_qingniu">

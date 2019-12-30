@@ -2,7 +2,7 @@
   "name": "vue-ccod",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "xunuo",
+  "author": "zhaoqi",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

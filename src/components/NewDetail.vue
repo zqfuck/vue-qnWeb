@@ -8,7 +8,7 @@
         <div class="text_">
           <span>{{time}}</span> <span>{{num}}</span>次阅读
         </div>
-        <div style="margin-bottom: 80px;" v-html="content"></div>
+        <div class="contentNews" style="margin-bottom: 80px;text-align:left;" v-html="content"></div>
       </div>
   </div>
 </template>

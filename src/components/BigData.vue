@@ -11,7 +11,9 @@
           <div class="data_1">
             <p>通过青牛大数据技术，帮助企业客群在企业用户群中找出匹配产品或服务的目标用户群。</p>
           </div>
-          <div class="data_Img_1"></div>
+          <div class="data_Img_1">
+            <img src="../assets/img/chan_1.png" alt="">
+          </div>
           <!-- <ul>
             <li style="margin-right: 93px;"><img src="../assets/img/cccc.png" />对接三大运营商大数据产品</li>
             <li><img src="../assets/img/cccc.png" />服务全程合规、安全，满足金融行业业务需求</li>
@@ -209,11 +211,9 @@ export default {
        line-height: 28px;
      }
      .data_Img_1{
-        background: url('../assets/img/chan_1.png') no-repeat;
-        background-size: 100% 100%;
+     
         cursor: pointer;
-        width: 775px;
-        height: 360px;
+
         margin: 78px 0 60px;
      }
      .ccod_data ul{
@@ -241,6 +241,7 @@ export default {
         align-items: center;
         justify-content: center;
         margin-bottom: 80px;
+        margin-top: 80px;
       }
 
       .bestServer_1{

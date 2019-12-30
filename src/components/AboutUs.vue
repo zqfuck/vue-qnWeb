@@ -548,10 +548,10 @@ export default {
      }
 
     .block_  .el-carousel__arrow--right{
-      right: 36px!important;
+      right: 44px!important;
     }
     .block_  .el-carousel__arrow--left{
-      left: 20px!important;
+      left: 28px!important;
     }
      .ccod_shiming{
         min-width: 1360px;

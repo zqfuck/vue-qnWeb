@@ -20,7 +20,7 @@
         </div>
         <div class="conpanyName">
                 <p>地址：北京市石景山区田顺庄北路1号院古城创业大厦3号楼</p>
-                <p>邮编：100043&nbsp;&nbsp;&nbsp; 总机：010-88822000 &nbsp;&nbsp;&nbsp;传真：101-68711717</p>
+                <p>邮编：100043&nbsp;&nbsp;&nbsp; 总机：010-88822000 &nbsp;&nbsp;&nbsp;传真：010-68711717</p>
             </div>
      </div>
   </div>

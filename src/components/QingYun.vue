@@ -8,8 +8,7 @@
           <h3 class="ccod_title f30" >联络云服务概述</h3>
           <p class="ccod_titles"><span class="line"></span></p>
           <div class="yunContent">
-              <p style="text-indent:50px;">CCOD (Contact Cloud On Demand)按需定制的联络云服务，是青牛软件倾力打造的全媒体、智能、安全、灵活
-                的企业云联络通信平台，帮助企业快速建立企业与客户之间全方位、多触点的沟通联络。</p>
+              <p style="text-indent:50px;">CCOD (Contact Cloud On Demand)按需定制的联络云服务，是青牛软件倾力打造的全媒体、智能、安全、灵活的企业云联络通信平台，帮助企业快速建立企业与客户之间全方位、多触点的沟通联络。</p>
           </div>
           <div class="yunImg">
           </div>

@@ -204,7 +204,7 @@
      border-bottom: 2px solid #FFBA00;
      padding-bottom: 18px;
    }
-  .ccod-menu-list .router-link-active{
+  .ccod-Heder .ccod-menu-list .router-link-active{
       color: #FFBA00;
      border-bottom: 2px solid #FFBA00;
      padding-bottom: 18px;
