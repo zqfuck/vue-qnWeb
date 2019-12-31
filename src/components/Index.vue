@@ -127,10 +127,10 @@
         <div class="ccod_detail_list"  style="margin-left: 80px;">
           <h3 class="f30">大数据技术</h3>
           <p class="mid">
-            中国企业联络云服务的开创者与引领者
+            为客户更精准投递服务
           </p>
           <p style="text-indent:36px;">通过青牛大数据技术，帮助企业客群在企业用户群中找出匹配产品或服务的目标用户群。</p>
-          <router-link to="/QingniuVideo"><button>了解详情</button></router-link>
+          <router-link to="/BigData"><button>了解详情</button></router-link>
 
         </div>
       </div>

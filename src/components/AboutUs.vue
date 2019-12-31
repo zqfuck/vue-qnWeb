@@ -4,11 +4,11 @@
         <img style="margin:207px 0 30px 0;" src="../assets/img/logo.png">
         <h2>关于我们</h2>
     </div>
-    <div class="ccod_company">
+    <div id="top1" class="ccod_company">
         <h3 class="ccod_title f30" >公司介绍</h3>
         <p class="ccod_titles"><span class="line"></span></p>
         <div class="pContent">
-            <p class="Pcon">青牛（北京）技术有限公司是中国领先的企业云服务提供商，致力于提高中国企业的营销效率和服务水平。</p>
+            <p class="Pcon">北京青牛技术股份有限公司是中国领先的企业云服务提供商，致力于提高中国企业的营销效率和服务水平。</p>
             <p class="Pcon">    青牛软件成立于2004年，是中国企业云服务模式最早的倡导者和践行者，青牛软件融合联络云、AI等云服务能力，结合
 大数据技术，实现与企业营销业务场景深度整合，为企业用户提供全球领先的智慧营销云服务。</p>
             <p class="Pcon">  经过多年的努力与发展，青牛软件的企业云服务已经广泛应用于金融、电信、政府、制造、互联网、生活服务等众多行业。</p>
@@ -24,7 +24,7 @@
     </div>
 
 
-    <div class="ccod_brand">
+    <div id="top2" class="ccod_brand">
         <h3 class="ccod_title f30">品牌释意</h3>
         <p class="ccod_titles"><span class="line"></span></p>
         <div class="brandCon">
@@ -36,7 +36,7 @@
     </div>  
 
 
-    <div class="ccod_history">
+    <div id="top3" class="ccod_history">
         <h3 class="ccod_title f30" >发展历程</h3>
         <p class="ccod_titles"><span class="line"></span></p>
         <div style=" margin:80px 0;">
@@ -140,7 +140,7 @@
        
     </div>
 
-    <div class="ccod_shifu">
+    <div id="top4" class="ccod_shifu">
         <div class="ccod_shiming">
           <h3 class="ccod_title f30" style="color: #fff3f3;">愿景使命</h3>
           <p class="ccod_titles"><span class="line"></span></p>
@@ -148,7 +148,7 @@
         </div>
         <ul>
           <li v-for="(item,index) in serverArry" :key="index">
-              <!-- <span>{{item.title}}</span> -->
+              <span>{{item.title}}</span>
               <p >{{item.content}}</p>
               <h5>{{item.content2}}</h5>
           </li>
@@ -157,7 +157,7 @@
     </div>
     
 
-    <div class="ccod_future">
+    <div id="top5" class="ccod_future">
       <div style='margin:40px 0 80px;'>
             <h3 class="ccod_title f30" style="margin-top:100px!important;">未来展望</h3>
             <p class="ccod_titles"><span class="line"></span></p>
@@ -188,7 +188,7 @@
         </div>
     </div> -->
 
-     <div class="ccod_future">
+     <div id="top6" class="ccod_future">
         <h3 class="ccod_title f30">联系我们</h3>
         <p class="ccod_titles"><span class="line"></span></p>
          <div class="ccod-section-contact">
@@ -226,7 +226,8 @@
   import com1 from "@/assets/img/com_1.png";
   import com2 from "@/assets/img/com_2.png";
   import com3 from "@/assets/img/com_3.png";
-
+  import com4 from "@/assets/img/com_4.png";
+  
  import ccod1 from "@/assets/img/ccod1.png";
  import ccod2 from "@/assets/img/ccod2.png";
  import ccod3 from "@/assets/img/ccod3.png";
@@ -287,6 +288,9 @@ export default {
             'url': com2
           },{
             'url': com3
+          },
+          {
+            'url': com4
           }
         ],
         imgArry:[
@@ -322,16 +326,16 @@ export default {
         serverArry:[
           {
             'title':'服务能力',
-            'content':'继续专注于提升融合网络能力',
-            'content2':'持续打造青牛企业云服务平台'
+            'content':'从传统语音、短信、邮件、',
+            'content2':'到互联网音视频、社交、AI和大数据'
           },{
             'title':'服务内容',
-            'content':'通过优化整合B2C之间多接触点的沟通',
-            'content2':'方式，搭建企业通向消费者的服务桥梁'
+            'content':'从智慧客服，到智慧营销',
+            'content2':''
           },{
             'title':'服务客群',
-            'content':'持续提高中国企业的营销效率和服务水平，',
-            'content2':'实现企业的商业价值向目标客户的有效传递'
+            'content':'从世界500强的大型企业，',
+            'content2':'到数以百万计的中小企业和商家'
           }
         ],
         futureArry:[
@@ -360,7 +364,7 @@ export default {
               url2:coin2,
               url3:coin3,
               url4:coin4,
-              name: '青牛（北京）技术有限公司',
+              name: '北京青牛技术股份有限公司',
               address:'北京市石景山区田顺庄北路1号院古城创业大厦3号楼9层',
               coordinate: [116.175412,39.912625],
               postcode: '100142',
