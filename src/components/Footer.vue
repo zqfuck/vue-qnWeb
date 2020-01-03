@@ -10,7 +10,7 @@
         </ul>
         <div class="conpanyName">
             <p>Copyright © 2016 channelsoft</p>
-            <p>版权所有：北京青牛技术股份有限公司 京ICP备10016421号-6</p>
+            <p>版权所有：北京青牛技术股份有限公司 京ICP备10016421号</p>
         </div>
      </div>
      <div class="footer_right">

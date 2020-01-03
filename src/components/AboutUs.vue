@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <div class="ccod_join">
+    <div class="ccod_join about_join">
         <img style="margin:207px 0 30px 0;" src="../assets/img/logo.png">
         <h2>关于我们</h2>
     </div>
@@ -426,11 +426,11 @@ export default {
 </script>
 
 <style>
-    .ccod_join{
+    .about_join{
      width: 100%;
       height: 560px;
-      background: url('../assets/img/bg_us.png') no-repeat;
-      background-size: 100% 100%;
+      background: url('../assets/img/bg_us.png') no-repeat center!important;
+      /* background-size: 100% 100%; */
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -560,7 +560,7 @@ export default {
      .ccod_shiming{
         min-width: 1360px;
         height: 528px;
-
+        /* padding-bottom: 200px; */
         cursor: pointer;
         overflow: hidden;
      }
@@ -573,18 +573,22 @@ export default {
         display:flex;
         flex-direction: column;
         align-items: center;
+        -moz-justify-content: center;
+        -ms-justify-content: center;
         justify-content: center;
      }
       .ccod_shifu ul{
-        min-width:1120px;
+        width:1120px;
         height: auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        position: absolute;
         z-index: 9;
-        position: absolute;   
-        top:320px;
+        margin: 0 auto;
+        position: relative;
+       
+         top:20px;
+       
       }
       .ccod_shifu ul li{
         width: 342px;
@@ -723,6 +727,7 @@ export default {
       }
       .ccod_future ul li p{
         color: #333333;
+        width: 100%;
         font-size: 16px;
         text-align: justify;
       }

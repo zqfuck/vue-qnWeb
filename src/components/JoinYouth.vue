@@ -125,7 +125,7 @@ export default {
       width: 100%;
       height: 560px;
       background: url('../assets/img/join.png') no-repeat center;
-      background-size: 100% 100%;
+      /* background-size: 100% 100%; */
       cursor: pointer;
     }
      .ccod_join h2{

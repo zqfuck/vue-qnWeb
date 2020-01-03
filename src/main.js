@@ -7,6 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'//element-ui的css
 import VueAMap from 'vue-amap';
 import VueWechatTitle from 'vue-wechat-title'
+import 'babel-polyfill'
 Vue.use(VueWechatTitle)
 import $ from 'jquery'
 

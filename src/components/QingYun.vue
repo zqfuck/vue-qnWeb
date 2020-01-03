@@ -191,7 +191,7 @@ export default {
       width: 100%;
       height: 560px;
       background: url('../assets/img/qingyun.png') no-repeat center;
-      background-size: cover;
+      /* background-size: cover; */
       overflow: hidden;
     }
      .ccod_join h2{

@@ -86,10 +86,10 @@ export default {
 
 <style>
      .ccod_join{
-      background: url('../assets/img/jiejue.png') no-repeat;
+      background: url('../assets/img/jiejue.png') no-repeat center;
       min-width: 1420px;
       height: 560px;
-      background-size: 100% 100%;
+      /* background-size: 100% 100%; */
       overflow: hidden;
       cursor: pointer;
       display: flex;

@@ -123,8 +123,8 @@ export default {
      .ccod_join{
         min-width: 1360px;
         height: 560px;
-        background: url('../assets/img/job.png') no-repeat;
-        background-size: 100% 100%;
+        background: url('../assets/img/job.png') no-repeat center;
+        /* background-size: 100% 100%; */
         cursor: pointer;
         display: flex;
         align-items: center;

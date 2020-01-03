@@ -80,7 +80,7 @@ export default {
     background: url('../assets/img/news.png') no-repeat center;
     width: 100%;
     height: 560px;
-    background-size: cover;
+    /* background-size: cover; */
     cursor: pointer;
     overflow: hidden;
   }

@@ -1,6 +1,7 @@
 <template>
   <div class="wrap">
     <div class="ccod_join">
+      <img style="margin:207px 0 30px 0;" src="../assets/img/logo.png">
         <h2>新闻动态</h2>
     </div>
     <div class="ccod_news">
@@ -104,13 +105,13 @@ export default {
       background: url('../assets/img/news.png') no-repeat center;
       width: 100%;
       height: 560px;
-      background-size: cover;
+      /* background-size: cover; */
       cursor: pointer;
       overflow: hidden;
     }
      .ccod_join h2{
        color: #ffffff;
-       margin-top: 240px;
+       /* margin-top: 240px; */
        font-size: 50px;
        font-weight: 500;
      }

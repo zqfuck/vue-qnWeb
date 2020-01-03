@@ -287,10 +287,10 @@ export default {
 <style scoped>
  
     .ccod_join{
-      background: url('../assets/img/jiejue.png') no-repeat;
+      background: url('../assets/img/jiejue.png') no-repeat center;
       min-width: 1360px;
       height: 560px;
-      background-size: 100% 100%;
+      /* background-size: 100% 100%; */
       cursor: pointer;
       display: flex;
       align-items: center;

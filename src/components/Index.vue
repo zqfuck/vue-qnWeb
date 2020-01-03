@@ -5,7 +5,7 @@
               <el-carousel arrow="never" :interval="3000" height="560px" style= "overflow-x:hidden;">
                   <el-carousel-item>
                     <img style="width:100%;height:100%;" src="../assets/img/b01.png" alt="">
-                    <div style="width:100%;display: flex;justify-content: center;position: absolute;top: 160px;">
+                    <div class="el-carousel-banner">
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox textBox1">
@@ -21,7 +21,7 @@
                   </el-carousel-item>
                   <el-carousel-item>
                     <img style="width:100%;height:100%;" src="../assets/img/b02.png" alt="">
-                    <div style="width:100%;display: flex;justify-content: center;position: absolute;top: 160px;">
+                    <div class="el-carousel-banner">
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox textBox2">
@@ -34,7 +34,7 @@
                   </el-carousel-item>
                   <el-carousel-item>
                     <img style="width:100%;height:100%;" src="../assets/img/b03.png" alt="">
-                    <div style="width:100%;display: flex;justify-content: center;position: absolute;top: 160px;">
+                    <div class="el-carousel-banner">
                       <img  src="../assets/img/lo_.png">
                     </div>
                     <div class="textBox">
@@ -176,6 +176,15 @@ export default {
 </script>
 
 <style >
+  .el-carousel-banner{
+    width:100%; 
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center; 
+    -ms-justify-content: center;
+    position: absolute;
+    top: 160px;
+  }
   .ccod_title{
     text-align: center;
     margin: 0;
