@@ -29,15 +29,20 @@ export default {
     methods:{
       detail(){
         let that = this;
-        axios.post('http://60.205.136.57:8089/jeecmsext/help/query',qs.stringify({
-          contentId:this.$route.params.c_id
-        })).then(function(res){
+        // axios.post('http://60.205.136.57:8089/jeecmsext/help/query',qs.stringify({
+        //   contentId:this.$route.params.c_id
+        // }))
+        axios.get('http://10.130.24.30:8090/news/queryNews',{params:{
+           contentId:this.$route.params.c_id
+        }})
+        .then(function(res){
           //console.log(res);
           if(res.data.code==0){
             that.content = res.data.obj.txt
             that.title = res.data.obj.title
             that.time = that.longTimeToDateNoMillisecond(res.data.obj.releaseDate)
-            that.num = res.data.obj.views
+           // that.num = res.data.obj.views
+            that.num = parseInt(10 + (Math.random()*100))
           }else{
 
           }
@@ -46,6 +51,11 @@ export default {
         })
       },
       longTimeToDateNoMillisecond(longTime){
+       // let Time = longTime.replace(new RegExp(/-/g), "/");
+      //  console.log(Time)
+        let time = longTime.substr(0,longTime.search("T"))
+        console.log(time)
+        return time;
         var day = new Date(longTime); //将毫秒转化为当前日期
         var year = day.getFullYear();
         var month = day.getMonth()+1;
@@ -64,7 +74,7 @@ export default {
         if(minute<10){
           minute = "0"+minute;
         };
-        var newDay = year+"-"+month+"-"+date+" " + hour + ":" + minute;
+        var newDay = year+"-"+month+"-"+date
         return newDay;
       },
     },

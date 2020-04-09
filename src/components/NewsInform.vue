@@ -7,7 +7,7 @@
     <div class="ccod_news">
       <div class="news_list" @click="goDetail(item.contentId)" v-for="(item,index) in newsArry" :key="index">
         <div class="newsImg">
-          <img :src="`http://60.205.136.57:8089${item.typeImg}`" alt="" />
+          <img :src="`${item.typeImg}`" alt="" />
         </div>
         <div class="newsRight">
           <h5>{{item.title}}</h5>
@@ -42,15 +42,32 @@ export default {
     },
     mounted:function(){
       this.newList();
+    //   this.createTimer()
     },
     methods:{
+      createTimer () {
+        let timer = setInterval( () => {
+          console.log(11)
+        },1000);
+        this.$once('hook:beforeDestroy',function () {
+          clearInterval(timer)
+        })
+      },
       newList(){
         let that = this;
-        axios.post('http://60.205.136.57:8089/jeecmsext/news/normal',qs.stringify({
-          pageNo:this.nowpages,
-            pageSize: this.pageSize
-          })).then(function(res){
-             // console.log(res);
+        console.log(123)
+        // axios.post('http://60.205.136.57:8089/jeecmsext/news/normal',qs.stringify({
+        //   pageNo:this.nowpages,
+        //     pageSize: this.pageSize
+        //   }))
+          axios.get('http://10.130.24.30:8090/news/normal',{
+            params:{
+               pageNo:this.nowpages,
+               pageSize: this.pageSize
+            }
+          })
+          .then(function(res){
+              console.log(res);
               if(res.data.code==0){
                  that.newsArry = res.data.obj;
                  that.total_ = res.data.total
@@ -67,6 +84,11 @@ export default {
       },
       /*时间转换*/
        longTimeToDateNoMillisecond(longTime){
+        // longTime = longTime.replace(new RegExp(/-/g), "/");
+        let time = longTime.substr(0,longTime.search("T"))
+        console.log(time)
+        return time;
+
          var day = new Date(longTime); //将毫秒转化为当前日期
          var year = day.getFullYear();
          var month = day.getMonth()+1;
@@ -85,7 +107,7 @@ export default {
          if(minute<10){
            minute = "0"+minute;
          };
-         var newDay = year+"-"+month+"-"+date+" " + hour + ":" + minute;
+         var newDay = year+"-"+month+"-"+date
          return newDay;
        },
         handleSizeChange(val) {

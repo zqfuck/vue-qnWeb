@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <p class="ccod_email">
-                如对职位有意向，请投递简历至<a href="mailto:qnzhaopin@xhannelsoft.com" target="_blank"><span>qnzhaopin@xhannelsoft.com</span></a>
+                如对职位有意向，请投递简历至<a href="mailto:qnzhaopin@channelsoft.com" target="_blank"><span>qnzhaopin@channelsoft.com</span></a>
             </p>
         </div>
     </div>
