@@ -11,6 +11,7 @@
         <div class="conpanyName">
             <p>Copyright © 2016 channelsoft</p>
             <p>版权所有：北京青牛技术股份有限公司 京ICP备10016421号</p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010702001980">京公网安备11010702001980号</a></p>
         </div>
      </div>
      <div class="footer_right">
